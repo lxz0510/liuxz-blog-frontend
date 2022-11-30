@@ -3,13 +3,5 @@ import Layout from './layout/Layout.vue'
 </script>
 
 <template>
-  <div>
-    <Layout/>
-  </div>
+  <Layout />
 </template>
-
-<style scoped>
-
-
-
-</style>

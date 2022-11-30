@@ -1,11 +1,7 @@
-import tailwind from 'tailwindcss'
-import tailwindTypography from '@tailwindcss/typography'
-
-export default {
-    plugins: [
-        tailwind({
-            content: ['./layout/*.vue'],
-            plugins: [tailwindTypography]
-        })
-    ]
-}
+// postcss.config.js
+module.exports = {
+  plugins: {
+    tailwindcss: {},
+    autoprefixer: {},
+  },
+};
