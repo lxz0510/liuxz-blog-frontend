@@ -7,7 +7,7 @@ const router = useRouter()
 const route = useRoute()
 
 watchEffect(async () => {
-  await useFetch(`${route.params.id}`)
+  await useFetch(`http://localhost:8080/articles/${route.params.id}`)
 })
 const currentArticleId = computed(() => route.params.id)
 const nextPost = computed(() => Number(currentArticleId.value) - 1)
